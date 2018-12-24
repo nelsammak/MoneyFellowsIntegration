@@ -1,0 +1,6 @@
+First run python3.6 ageDict.py to initialize database on port 27017 with 2 collecttions; 1st that acts as a configuartion of age range with age category, 2nd that holds one record that gets updated upon the call to the NodeJS server.
+Run node server.js to start to NodeJS server
+Run python3.6 server.py to start the Python server (configured to run on port 3101)
+Using postman or any other simulator send a POST request to 127.0.0.1:3100 with the body in the format:
+{"Age": "23"}
+The collection pymongo_ageRecords would have the age and age category updated accordingly.
